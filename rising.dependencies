@@ -1,0 +1,26 @@
+[
+    {
+        "remote" : "github",
+        "repository" : "LineageOS/android_device_google_gs-common",
+        "branch" : "lineage-22.0".
+        "target_path" : "device/google/gs-common"
+    },
+    {
+        "remote" : "github",
+        "repository" : "LineageOS/android_device_redbull",
+        "branch" : "lineage-22.0".
+        "target_path" : "device/google/redbull"
+    },
+    {
+        "remote" : "github",
+        "repository" : "LineageOS/android_kernel_google_redbull",
+        "branch" : "lineage-22.0".
+        "target_path" : "kernel/google/redbull"
+    },
+    {
+        "remote" : "github",
+        "repository" : "TheMuppets/proprietary_vendor_google_redfin",
+        "branch" : "lineage-22.0".
+        "target_path" : "vendor/google/redfin"
+    }
+]

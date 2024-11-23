@@ -4,8 +4,23 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Lineage stuff.
+# Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+RISING_MAINTAINER := honokascape
+
+# Rising Flags
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 765G 5G (7 nm)" \
+    RisingMaintainer="Don Johan Liebert"
+
+# Targets
+TARGET_ENABLE_BLUR := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+TARGET_HAS_UDFPS := false
+
+# GMS
+WITH_GMS := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/redfin/aosp_redfin.mk)
